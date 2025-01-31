@@ -1,0 +1,9 @@
+.navbar-brand img {
+    max-height: 40px;
+}
+
+@media (max-width: 767px) {
+    .btn-custom {
+        margin-right: 10px;
+        }
+}
