@@ -12,11 +12,11 @@
         <script src="cadastro.js" defer></script>
     </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #391BA6;">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <span class="h4">Squad 60</span>
+                <span class="h4" style="color: #F2BB13;">ConecTEA</span>
             </a>
     
             <!-- Botão Hamburguer para Mobile -->
@@ -27,20 +27,32 @@
             <!-- Itens do Menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Início</a>
+                    <li class="nav-item me-2">  <!-- Adicionado espaçamento -->
+                        <a class="nav-link active text-white" href="#" 
+                           style="background-color: #0B8CBF; border-radius: 5px; padding: 8px 15px;">
+                            Início
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Quem Somos</a>
+                    <li class="nav-item me-2">  <!-- Cor alterada e espaçamento -->
+                        <a class="nav-link text-white" href="quemSomos.html" 
+                           style="background-color: #F22222; border-radius: 5px; padding: 8px 15px;">
+                            Quem Somos
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Unidades</a>
+                    <li class="nav-item me-2">  <!-- Espaçamento -->
+                        <a class="nav-link text-white" href="unidades.html" 
+                           style="background-color: #F2BB13; border-radius: 5px; padding: 8px 15px;">
+                            Unidades
+                        </a>
                     </li>
                 </ul>
                 
                 <!-- Botão à direita -->
-                <div class="d-flex">
-                    <a href="login.html" class="btn btn-primary btn-custom">Entre ou Cadastre-se</a>
+                <div class="d-flex ms-2">  <!-- Espaçamento -->
+                    <a href="login.html" class="btn" 
+                       style="background-color: #7CBF17; color: white; border-radius: 5px; padding: 8px 15px;">
+                        Entre ou Cadastre-se
+                    </a>
                 </div>
             </div>
         </div>

@@ -22,3 +22,17 @@
         margin-right: 10px;
         }
 }
+
+.turmas .badge {
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 0.5em 0.75em;
+  }
+  
+  .card {
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }

@@ -1,12 +1,33 @@
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.nav-link, .btn {
+    transition: all 0.3s ease !important;
+    margin: 0 4px !important;  /* Espaçamento aumentado */
+}
+
+.nav-link:hover, .btn:hover {
+    filter: brightness(90%);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar-nav {
+    gap: 8px;  /* Espaço extra entre os itens */
+}
+
+@media (max-width: 767px) {
+    .btn-custom {
+        margin-right: 10px;
+        }
+}
+
 body {
     background-color: #f8f9fa;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.navbar {
-    flex-shrink: 0; /* Mantém o menu fixo no topo */
 }
 
 .container {
