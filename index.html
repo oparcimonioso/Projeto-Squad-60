@@ -11,44 +11,221 @@
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-            <span class="h4">Squad 60</span>
-        </a>
-
-        <!-- Botão Hamburguer para Mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Itens do Menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Quem Somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Unidades</a>
-                </li>
-            </ul>
-            
-            <!-- Botão à direita -->
-            <div class="d-flex">
-                <a href="login.html" class="btn btn-primary btn-custom">Entre ou Cadastre-se</a>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #391BA6;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <span class="h4" style="color: #F2BB13;">ConecTEA</span>
+            </a>
+    
+            <!-- Botão Hamburguer para Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Itens do Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item me-2">  <!-- Adicionado espaçamento -->
+                        <a class="nav-link active text-white" href="index.html" 
+                           style="background-color: #0B8CBF; border-radius: 5px; padding: 8px 15px;">
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li class="nav-item me-2">  <!-- Cor alterada e espaçamento -->
+                        <a class="nav-link text-white" href="quemSomos.html" 
+                           style="background-color: #F22222; border-radius: 5px; padding: 8px 15px;">
+                            Quem Somos
+                        </a>
+                    </li>
+                    <li class="nav-item me-2">  <!-- Espaçamento -->
+                        <a class="nav-link text-white" href="unidades.html" 
+                           style="background-color: #F2BB13; border-radius: 5px; padding: 8px 15px;">
+                            Unidades
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Botão à direita -->
+                <div class="d-flex ms-2">  <!-- Espaçamento -->
+                    <a href="login.html" class="btn" 
+                       style="background-color: #7CBF17; color: white; border-radius: 5px; padding: 8px 15px;">
+                        Entre ou Cadastre-se
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>  
-        <!-- Conteúdo Principal -->
-        <div class="container mt-4">
-            <h1>Conteúdo do Site</h1>
-            <p>Exemplo de conteúdo aqui...</p>
+    </nav>
+ <!-- Section Explicativa -->
+ <section id="destaque-educacao-inclusiva">
+    <div class="container-fluid p-5" style="background-color: #0B8CBF;">
+      <div class="row align-items-center">
+        <!-- Coluna da Imagem -->
+        <div class="col-12 col-md-5 mb-4 mb-md-0">
+          <img src="imagens/prof_e_aluno.png" width="75%" alt="Crianças aprendendo juntas em sala de aula adaptada">
         </div>
+  
+        <!-- Coluna do Texto -->
+        <div class="col-12 col-md-7 text-white">
+          <h2 class="display-5 fw-bold mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+            Educação Inclusiva de Qualidade para Todos
+          </h2>
+          <p class="lead mb-4">
+            No ConecTEA, acreditamos que cada criança com autismo merece acesso a uma educação 
+            adaptada e acolhedora. Nossa plataforma conecta famílias a escolas preparadas 
+            para oferecer:
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <i class="bi bi-check2-circle me-2" style="color: #F2BB13;"></i>
+              Profissionais especializados em TEA
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-check2-circle me-2" style="color: #F2BB13;"></i>
+              Infraestrutura adaptada às necessidades sensoriais
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-check2-circle me-2" style="color: #F2BB13;"></i>
+              Metodologias de ensino individualizadas
+            </li>
+          </ul>
+          <a href="unidades.html" class="btn btn-lg mt-3" 
+             style="background-color: #391BA6; color: white; border-radius: 30px; padding: 12px 30px;">
+            Encontre a Escola Ideal
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container p-5 bg-white rounded-5">
+      <div class="row align-items-center">
+        <!-- Coluna da Imagem -->
+        <div class="col-12 col-md-5 mb-4 mb-md-0">
+          <img src="imagens/fita_autismo.svg" width="75%" alt="Fita de conscientização do autismo">
+        </div>
+        
+        <!-- Coluna do Texto -->
+        <div class="col-12 col-md-7 text-dark"> <!-- Alterado para texto preto -->
+          <h6 class="display-5 fw-bold mb-4 text-end" 
+              style="color: #391BA6; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+            Direito à Educação e Inclusão como Base do Desenvolvimento
+          </h6>
+          <p class="lead mb-4 fw-semibold text-end">
+            A matrícula de crianças autistas em escolas regulares é um direito garantido por leis nacionais e internacionais,
+            como a Lei Brasileira de Inclusão, assegurando acesso igualitário à educação. A escola é um ambiente fundamental
+            para socialização, desenvolvimento de habilidades comunicativas e construção de autonomia, rompendo barreiras
+            históricas de exclusão. Adaptações pedagógicas, como planos de ensino individualizados e apoio de profissionais
+            especializados, permitem que a criança aprenda em seu ritmo, explorando seu potencial. Além disso, a convivência
+            com colegas neurotípicos promove empatia e respeito à diversidade, beneficiando toda a comunidade escolar.
+            A inclusão escolar combate estigmas e prepara a sociedade para acolher a neurodiversidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <section>
+    <div class="container p-5 bg-white rounded-5">
+        <div class="row align-items-center">
+            <!-- Coluna do Texto -->
+            <div class="col-12 col-md-7 text-dark"> <!-- Alterado para texto preto -->
+            <h6 class="display-5 fw-bold mb-4 text-start" 
+                style="color: #391BA6; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+                Impacto no Desenvolvimento Individual e Coletivo
+            </h6>
+            <p class="lead mb-4 fw-semibold text-start">
+                A inserção no ambiente escolar estimula habilidades socioemocionais em crianças autistas, como regulação emocional e
+                independência, graças à rotina estruturada e atividades lúdicas. A intervenção precoce em contextos inclusivos está
+                ligada a avanços na linguagem, interação social e aprendizagem, impactando positivamente sua qualidade de vida. Para
+                a sociedade, a presença dessas crianças nas salas de aula desafia preconceitos, formando cidadãos mais conscientes e
+                solidários. Apesar dos desafios, como falta de preparo docente ou infraestrutura inadequada, investir em formação e
+                políticas públicas é essencial para garantir inclusão efetiva. Matricular crianças autistas não é apenas cumprir a lei, 
+                mas construir um futuro onde diferenças são valorizadas como parte da riqueza humana.
+            </p>
+            </div>
+            <!-- Coluna da Imagem -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img src="imagens/menino_autista.svg" width="75%" alt="Fita de conscientização do autismo">
+            </div>
+      </div>
+    </div>
+  </section>
+  <footer class="pt-5" style="color: white;">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Sobre -->
+        <div class="col-12 col-md-4">
+          <h4 class="mb-3" style="color: #F2BB13;">ConecTEA</h4>
+          <p class="small">
+            Plataforma dedicada à inclusão educacional de crianças e adolescentes 
+            com Transtorno do Espectro Autista (TEA). Conectamos famílias a escolas 
+            preparadas para oferecer educação de qualidade.
+          </p>
+        </div>
+  
+        <!-- Links Úteis -->
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3" style="color: #F2BB13;">Links Rápidos</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#" class="text-white text-decoration-none hover-yellow">
+                <i class="bi bi-house-door me-2"></i>Início
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="unidades.html" class="text-white text-decoration-none hover-yellow">
+                <i class="bi bi-geo-alt me-2"></i>Unidades
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="quemSomos.html" class="text-white text-decoration-none hover-yellow">
+                <i class="bi bi-people me-2"></i>Quem Somos
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Contato -->
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3" style="color: #F2BB13;">Contato</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <i class="bi bi-envelope me-2" style="color: #F2BB13;"></i>
+              contato@conectea.org
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-telephone me-2" style="color: #F2BB13;"></i>
+              (81) 98765-4321
+            </li>
+            <li class="d-flex gap-3 mt-3">
+              <a href="#" class="text-white hover-yellow" aria-label="Facebook">
+                <i class="bi bi-facebook fs-5"></i>
+              </a>
+              <a href="#" class="text-white hover-yellow" aria-label="Instagram">
+                <i class="bi bi-instagram fs-5"></i>
+              </a>
+              <a href="#" class="text-white hover-yellow" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp fs-5"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Direitos Autorais -->
+      <div class="border-top mt-5 pt-3" style="border-color: #F2BB13 !important;">
+        <div class="row">
+          <div class="col-12 text-center small">
+            <p class="mb-0">
+              © 2024 ConecTEA - Todos os direitos reservados<br>
+              Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> pela comunidade
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
     <!-- Bootstrap 5 JS + Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
