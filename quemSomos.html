@@ -1,135 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Foi removida a duplicidade da tag viewport, mantendo apenas uma -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quem Somos</title>
     <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="quemSomos.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
-<body>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+
+    <!-- Bootstrap Icons CSS (necessário para os ícones usados no footer) -->
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="quemSomos.css">
+
+    <!-- Removido o script do Bootstrap JS daqui para posicioná-lo ao final do <body> -->
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #391BA6;">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-                <span class="h4" style="color: #F2BB13;">ConecTEA</span>
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <span class="h4" style="color: #F2BB13;">ConecTEA</span>
+        </a>
+
+        <!-- Botão Hamburguer para Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Itens do Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item me-2">
+              <a class="nav-link active text-white" href="index.html" 
+                 style="background-color: #0B8CBF; border-radius: 5px; padding: 8px 15px;">
+                Página Inicial
+              </a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-white" href="quemSomos.html" 
+                 style="background-color: #F22222; border-radius: 5px; padding: 8px 15px;">
+                Quem Somos
+              </a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-white" href="unidades.html" 
+                 style="background-color: #F2BB13; border-radius: 5px; padding: 8px 15px;">
+                Unidades
+              </a>
+            </li>
+          </ul>
+          
+          <!-- Botão à direita -->
+          <div class="d-flex ms-2">
+            <a href="login.html" class="btn" 
+               style="background-color: #7CBF17; color: white; border-radius: 5px; padding: 8px 15px;">
+              Entre ou Cadastre-se
             </a>
-    
-            <!-- Botão Hamburguer para Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Itens do Menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item me-2">  <!-- Adicionado espaçamento -->
-                        <a class="nav-link active text-white" href="index.html" 
-                           style="background-color: #0B8CBF; border-radius: 5px; padding: 8px 15px;">
-                            Página Inicial
-                        </a>
-                    </li>
-                    <li class="nav-item me-2">  <!-- Cor alterada e espaçamento -->
-                        <a class="nav-link text-white" href="quemSomos.html" 
-                           style="background-color: #F22222; border-radius: 5px; padding: 8px 15px;">
-                            Quem Somos
-                        </a>
-                    </li>
-                    <li class="nav-item me-2">  <!-- Espaçamento -->
-                        <a class="nav-link text-white" href="unidades.html" 
-                           style="background-color: #F2BB13; border-radius: 5px; padding: 8px 15px;">
-                            Unidades
-                        </a>
-                    </li>
-                </ul>
-                
-                <!-- Botão à direita -->
-                <div class="d-flex ms-2">  <!-- Espaçamento -->
-                    <a href="login.html" class="btn" 
-                       style="background-color: #7CBF17; color: white; border-radius: 5px; padding: 8px 15px;">
-                        Entre ou Cadastre-se
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </nav>
+
+    <!-- Conteúdo principal envolvido em uma tag <main> para melhor semântica -->
+    <main class="container my-5">
+      <div class="row">
+        <!-- Div "Nosso Propósito" -->
+        <div class="col-12 mb-4">
+          <div class="p-4" style="background-color: #F2BB13; border-radius: 5px;">
+            <h2 style="color: #391BA6;">Nosso Propósito</h2>
+            <p style="color: #391BA6;">
+              Nosso Propósito é ser uma ponte de transformação, conectando as potencialidades de cada indivíduo ao seu caminho de aprendizado e crescimento.
+              Em um mundo repleto de desafios, queremos ser o farol que ilumina e guia as famílias, oferecendo oportunidades de inclusão e excelência educacional.
+              Acreditamos que cada criança e adolescente possui um brilho único que precisa ser cultivado, e por isso, trabalhamos incansavelmente para criar ambientes acolhedores e estimulantes.
+              Nossa missão vai além de oferecer educação; queremos fomentar um espaço onde o respeito, a empatia e a solidariedade se tornam pilares fundamentais do desenvolvimento.
+              Assim, nos dedicamos a construir uma comunidade unida, onde a diversidade é celebrada e cada conquista é compartilhada, transformando vidas e abrindo caminhos para um futuro mais justo e promissor.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Div "Quem Somos" -->
+        <div class="col-12 mb-4">
+          <div class="p-4" style="background-color: #391BA6; border-radius: 5px;">
+            <h2 style="color: #F2BB13;">Quem Somos</h2>
+            <p style="color: #fff;">
+              Somos o squad 60 do curso da Recode, chamado Recode PRO AI. O projeto que você está vendo a seguir está sendo desenvolvido por estudantes da RECODE ao longo da duração do curso.
+              Nosso objetivo como grupo é criar uma plataforma que auxilie pais de crianças e adolescentes da cidade de Recife (PE) a encontrarem instituições educacionais para seus filhos com
+              Transtorno do Espectro Autista (TEA) para que possam desenvolver suas habilidades e potencialidades. Conheça quem está por trás desse projeto:
+            </p>
+          </div>
+        </div>
+        
+        <!-- Div "Quem Somos" - Equipe -->
+        <div class="col-12">
+          <div class="p-4">
+            <!-- Cards da Equipe -->
+            <div class="container mt-4">
+              <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-sm-6 col-md-3">
+                  <div class="card bg-transparent border-0">
+                    <img src="foto1.jpg" class="card-img-top" alt="Foto de Fulano de Tal">
+                    <div class="card-body text-center">
+                      <h5 class="card-title" style="color: #F2BB13;">Fulano de Tal</h5>
+                      <p class="card-text" style="color: #fff;">Idade: 25 anos</p>
+                      <p class="card-text" style="color: #fff;">Aluno da Recode Pro AI</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-sm-6 col-md-3">
+                  <div class="card bg-transparent border-0">
+                    <img src="foto2.jpg" class="card-img-top" alt="Foto de Beltrana Silva">
+                    <div class="card-body text-center">
+                      <h5 class="card-title" style="color: #F2BB13;">Beltrana Silva</h5>
+                      <p class="card-text" style="color: #fff;">Idade: 22 anos</p>
+                      <p class="card-text" style="color: #fff;">Aluno da Recode Pro AI</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-sm-6 col-md-3">
+                  <div class="card bg-transparent border-0">
+                    <img src="foto3.jpg" class="card-img-top" alt="Foto de Ciclano Souza">
+                    <div class="card-body text-center">
+                      <h5 class="card-title" style="color: #F2BB13;">Ciclano Souza</h5>
+                      <p class="card-text" style="color: #fff;">Idade: 28 anos</p>
+                      <p class="card-text" style="color: #fff;">Aluno da Recode Pro AI</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-sm-6 col-md-3">
+                  <div class="card bg-transparent border-0">
+                    <img src="foto4.jpg" class="card-img-top" alt="Foto de Sicrana Oliveira">
+                    <div class="card-body text-center">
+                      <h5 class="card-title" style="color: #F2BB13;">Sicrana Oliveira</h5>
+                      <p class="card-text" style="color: #fff;">Idade: 26 anos</p>
+                      <p class="card-text" style="color: #fff;">Aluno da Recode Pro AI</p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- fim .row -->
+            </div> <!-- fim .container mt-4 -->
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer class="pt-5" style="color: white;">
-        <div class="container">
-          <div class="row g-4">
-            <!-- Sobre -->
-            <div class="col-12 col-md-4">
-              <h4 class="mb-3" style="color: #F2BB13;">ConecTEA</h4>
-              <p class="small">
-                Plataforma dedicada à inclusão educacional de crianças e adolescentes 
-                com Transtorno do Espectro Autista (TEA). Conectamos famílias a escolas 
-                preparadas para oferecer educação de qualidade.
+      <div class="container">
+        <div class="row g-4">
+          <!-- Sobre -->
+          <div class="col-12 col-md-4">
+            <h4 class="mb-3" style="color: #F2BB13;">ConecTEA</h4>
+            <p class="small">
+              Plataforma dedicada à inclusão educacional de crianças e adolescentes 
+              com Transtorno do Espectro Autista (TEA). Conectamos famílias a escolas 
+              preparadas para oferecer educação de qualidade.
+            </p>
+          </div>
+
+          <!-- Links Úteis -->
+          <div class="col-12 col-md-4">
+            <h5 class="mb-3" style="color: #F2BB13;">Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none hover-yellow">
+                  <i class="bi bi-house-door me-2"></i>Início
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="unidades.html" class="text-white text-decoration-none hover-yellow">
+                  <i class="bi bi-geo-alt me-2"></i>Unidades
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="quemSomos.html" class="text-white text-decoration-none hover-yellow">
+                  <i class="bi bi-people me-2"></i>Quem Somos
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contato -->
+          <div class="col-12 col-md-4">
+            <h5 class="mb-3" style="color: #F2BB13;">Contato</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="bi bi-envelope me-2" style="color: #F2BB13;"></i>
+                contato@conectea.org
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone me-2" style="color: #F2BB13;"></i>
+                (81) 98765-4321
+              </li>
+              <li class="d-flex gap-3 mt-3">
+                <a href="#" class="text-white hover-yellow" aria-label="Facebook">
+                  <i class="bi bi-facebook fs-5"></i>
+                </a>
+                <a href="#" class="text-white hover-yellow" aria-label="Instagram">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+                <a href="#" class="text-white hover-yellow" aria-label="WhatsApp">
+                  <i class="bi bi-whatsapp fs-5"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Direitos Autorais -->
+        <div class="border-top mt-5 pt-3" style="border-color: #F2BB13 !important;">
+          <div class="row">
+            <div class="col-12 text-center small">
+              <p class="mb-0">
+                © 2024 ConecTEA - Todos os direitos reservados<br>
+                Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> pela comunidade
               </p>
             </div>
-      
-            <!-- Links Úteis -->
-            <div class="col-12 col-md-4">
-              <h5 class="mb-3" style="color: #F2BB13;">Links Rápidos</h5>
-              <ul class="list-unstyled">
-                <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none hover-yellow">
-                    <i class="bi bi-house-door me-2"></i>Início
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="unidades.html" class="text-white text-decoration-none hover-yellow">
-                    <i class="bi bi-geo-alt me-2"></i>Unidades
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="quemSomos.html" class="text-white text-decoration-none hover-yellow">
-                    <i class="bi bi-people me-2"></i>Quem Somos
-                  </a>
-                </li>
-              </ul>
-            </div>
-      
-            <!-- Contato -->
-            <div class="col-12 col-md-4">
-              <h5 class="mb-3" style="color: #F2BB13;">Contato</h5>
-              <ul class="list-unstyled">
-                <li class="mb-2">
-                  <i class="bi bi-envelope me-2" style="color: #F2BB13;"></i>
-                  contato@conectea.org
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-telephone me-2" style="color: #F2BB13;"></i>
-                  (81) 98765-4321
-                </li>
-                <li class="d-flex gap-3 mt-3">
-                  <a href="#" class="text-white hover-yellow" aria-label="Facebook">
-                    <i class="bi bi-facebook fs-5"></i>
-                  </a>
-                  <a href="#" class="text-white hover-yellow" aria-label="Instagram">
-                    <i class="bi bi-instagram fs-5"></i>
-                  </a>
-                  <a href="#" class="text-white hover-yellow" aria-label="WhatsApp">
-                    <i class="bi bi-whatsapp fs-5"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      
-          <!-- Direitos Autorais -->
-          <div class="border-top mt-5 pt-3" style="border-color: #F2BB13 !important;">
-            <div class="row">
-              <div class="col-12 text-center small">
-                <p class="mb-0">
-                  © 2024 ConecTEA - Todos os direitos reservados<br>
-                  Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> pela comunidade
-                </p>
-              </div>
-            </div>
           </div>
         </div>
-      </footer>
-</body>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (inclui Popper) posicionado ao final para melhor performance -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous"></script>
+  </body>
 </html>
