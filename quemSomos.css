@@ -21,6 +21,7 @@ body {
     gap: 8px;  /* Espaço extra entre os itens */
 }
 
+
 @media (max-width: 767px) {
     .btn-custom {
         margin-right: 10px;
